@@ -14,7 +14,8 @@ import { Sonnet } from '../../models/sonnet';
   template: `
    <div class="list-item">
      <label for="">{{ sonnet.number}}</label>
-     <div>{{ line }}</div>
+     <div class="" *ngFor="let line of sonnet.lines">{{ line }}</div>
+
    </div>
   `,
 } )
