@@ -1,0 +1,30 @@
+:host {
+  .app {
+    height:                                    100%; //resolves IE11 sticky footer issue
+    display:                                   flex;
+    flex-direction:                            column;
+
+    &__title {
+      font-size: 20px;
+    }
+    &__search {
+      input {
+        width: 50%;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+    }
+    &__list {
+      margin-top: 20px;
+      display:                                   flex;
+      flex-direction: column;
+    }
+
+    &__footer {
+      display:                                   flex;
+      flex-shrink: 0;
+      padding: 20px 10px;
+    }
+  }
+
+}
